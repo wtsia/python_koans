@@ -25,7 +25,7 @@ class AboutControlStatements(Koan):
             result = 'true value'
         else:
             result = 'default value'
-        self.assertEqual('false value', result)
+        self.assertEqual('true value', result)
 
     def test_while_statement(self):
         i = 1
@@ -69,9 +69,9 @@ class AboutControlStatements(Koan):
         ]
         result = []
         for knight, answer in round_table:
-            result.append("Contestant: '" + knight + "'   Answer: '" + answer + "'")
+            result.append("Contestant: '" + knight + "' Answer: '" + answer + "'")
 
-        text = (knight, answer, "Contestant: '" + knight + "'   Answer: '" + answer + "'")
+        text = "Contestant: 'Robin' Answer: 'Blue! I mean Green!'"
 
         self.assertRegex(result[2], text)
 
